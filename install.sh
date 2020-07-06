@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# System update
-sudo apt update
-sudo apt dist-upgrade -y
-sudo apt autoremove -y
-
 # GIT
 sudo apt-add-repository ppa:git-core/ppa -y
 sudo apt update
