@@ -22,5 +22,6 @@ cp sed.json monitoring
 cp htpasswd monitoring/config/.htpasswd
 
 # Install and up
+docker network create web
 cd monitoring && docker run --rm --name script -v "$PWD":/usr/src/app -w /usr/src/app node:14.5-alpine node install
 docker-compose up -d
