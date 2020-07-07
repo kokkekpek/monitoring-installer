@@ -1,0 +1,19 @@
+{
+  "directories": {
+    "traefik.acme": {
+      "path": "./data/traefik/acme",
+      "permissions": 775
+    },
+    "traefik.log": {
+      "path": "./log",
+      "permissions": 775
+    }
+  },
+  "values": {
+    "domain": "traefik.localhost",
+    "email": "traefik@gmail.com"
+  },
+  "show": {
+    "tls": false
+  }
+}
