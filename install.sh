@@ -18,10 +18,10 @@ sudo usermod -aG docker $USER
 git clone https://github.com/kokkekpek/monitoring.git
 
 # Copy configs
-cp sed.json monitoring
+cp config.json monitoring
 cp htpasswd monitoring/config/.htpasswd
 
 # Install and up
 docker network create web
-cd monitoring && docker run --rm --name script -v "$PWD":/usr/src/app -w /usr/src/app node:14.5-alpine node install
+cd monitoring && sh ./configurator.sh
 docker-compose up -d
