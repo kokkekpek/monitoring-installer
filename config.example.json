@@ -1,20 +1,18 @@
 {
   "directories": {
     "traefik.acme": {
-      "path": "./data/traefik/acme",
-      "permissions": 775
+      "path": "./xxx/data/traefik/acme",
+      "permissions": 755
     },
     "traefik.log": {
-      "path": "./log",
-      "permissions": 775
+      "path": "./xxx/log/traefik",
+      "permissions": 755
     }
   },
   "values": {
     "whoami.domain": "xxx.xxx",
     "traefik.domain": "xxx.xxx",
-    "email": "xxx@xxx.xxx"
-  },
-  "show": {
+    "email": "xxx@xxx.xxx",
     "tls": false
   }
 }
