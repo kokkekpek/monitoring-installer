@@ -26,8 +26,8 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 git clone https://github.com/kokkekpek/monitoring.git
 
 # Copy configs
-cp config.json monitoring
-cp htpasswd monitoring/config/.htpasswd
+mv config.json monitoring
+mv htpasswd monitoring/config/.htpasswd
 
 # Install and up
 docker network create web
